@@ -1,0 +1,78 @@
+.menu {
+	background: url('../img/bg/menu.jpg') center center;
+	background-size: cover;
+	position: relative;
+
+	.section__title {
+		padding: 70px 0 0 90px;
+	}
+}
+
+.menu-accordion__list {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	@include clearfix;
+}
+
+.menu-accordion__item {
+	float: left;
+	height: 100%;
+	@include clearfix;
+
+	&-active {
+		.menu-accordion__triger-text {
+			color: $yellow;
+		}
+
+		.menu-accordion__content {
+			width: 550px;
+		}
+	}
+}
+
+.menu-accordion__triger {
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 80px;
+	display: block;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.menu-accordion__triger-text {
+	font-size: 40px;
+	position: absolute;
+	top: 50%;
+	height: 80px;
+	margin-top: -40px;
+	white-space: nowrap;
+	width: 650px;
+	color: #fff;
+	left: 50%;
+	margin-left: -315px;
+	transform: rotate(-90deg);
+	text-align: center;
+	font-family: 'Gagalin-Regular';
+}
+
+.menu-accordion__content {
+	width: 0;
+	background: rgba(47, 50, 52, .93);
+	float: left;
+	height: 100%;
+	color: #fff;
+	overflow: hidden;
+}
+
+.menu-accordion__content-text {
+	font-family: 'Ubuntu-Light';
+    font-size: 14px;
+    color: #fff;
+    padding: 60px 30px;
+    width: 550px;
+    line-height: 1.8;
+}

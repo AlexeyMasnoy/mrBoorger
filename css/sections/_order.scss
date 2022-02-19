@@ -1,0 +1,136 @@
+.order {
+	background: url('../img/bg/order.jpg') center center;
+	background-size: cover;
+	position: relative;
+
+	&__radio {
+		position: relative;
+	    white-space: nowrap;
+	    margin-right: 20px;
+	    display: inline-block;
+	    vertical-align: middle;
+	    cursor: pointer;
+
+	    &-elem {
+			position: absolute;
+		    top: 0;
+		    left: -9999px;
+	    }
+
+	    &-styled-elem {
+	    	width: 16px;
+		    height: 16px;
+		    border-radius: 50%;
+		    background: #fff;
+		    display: inline-block;
+		    vertical-align: middle;
+		    position: relative;
+
+		    &:after {
+		    	content: "";
+			    display: block;
+			    position: absolute;
+			    width: 0;
+			    height: 0;
+			    border-radius: 50%;
+			    background: #e35028;
+			    top: 50%;
+			    left: 50%;
+			    -webkit-transform: translate(-50%,-50%);
+			    transform: translate(-50%,-50%);
+			    -webkit-transition: width .3s , height .3s;
+			    transition: width .3s , height .3s;
+		    }
+	    }
+	}
+
+	&__radio-title {
+		display: inline-block;
+	    vertical-align: middle;
+	    font-size: 14px;
+	    color: #fff;
+	    margin-left: 10px;
+	}
+
+	.container {
+		@include clearfix;
+	}
+
+	.section__title {
+		text-align: center;
+	}
+}
+
+.order__radio-elem:checked+.order__radio-styled-elem:after{
+	width:8px;
+	height:8px;
+
+}
+
+.order__form-input__textarea {
+	height: 110px;
+}
+
+.order__form-column {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
+}
+
+.order__form-two__rows {
+	@include clearfix;
+	margin-left: -20px;
+	.order__form-block {
+		float: left;
+		width: calc(100% / 2 - 20px);
+		margin-left: 20px;
+	}
+	
+}
+
+.order__form-four__rows {
+	@include clearfix;
+	margin-left: -20px;
+	.order__form-block {
+		float: left;
+		width: calc(100% / 4 - 20px);
+		margin-left: 20px;
+	}
+}
+
+.order__form {
+	&-title {
+		margin-bottom: 17px;
+	    font-family: 'Ubuntu-Light';
+	    color: #fff;
+	    font-size: 14px;
+	}
+
+	&-row {
+		@include clearfix;
+		margin-bottom: 15px;
+	}
+
+	&-input {
+		font-size: 14px;
+	    padding: 10px;
+	    padding: 5px 10px;
+	    border: 1px solid #d1cfcb;
+	    border-radius: 5px;
+	    width: 100%;
+	}
+
+	&-button {
+		border: 0;
+		margin-right: 20px;
+		cursor: pointer;
+	}
+
+}
+
+.reset__button {
+	padding-left: 0;
+    padding-right: 0;
+    text-transform: none;
+    background: transparent;
+}

@@ -1,0 +1,145 @@
+.we-do {
+	background: url('../img/bg/we-do-bg.jpg') center center;
+	background-size: cover;
+	position: relative;
+	
+	.container {
+		position: static;
+	}
+
+	&__container {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		right: 0;
+	}
+
+	&__content {
+
+		&-text {
+			font-size: 65px;
+		    color: #fff;
+		    font-family: 'Lifehack-Medium';
+		    text-transform: lowercase;
+		    line-height: 1em;
+		}
+
+
+		&-left {
+			float: left;
+			width: 50%;
+		}
+
+		&-right {
+			float: left;
+			width: 50%;
+			padding-top: 115px;
+		}
+	}
+}
+
+.header {
+
+	padding-top: 12px;
+
+	.container {
+		@include clearfix;
+	}
+
+	&__logo {
+		float: left;
+		width: 30%;
+	}
+
+	&__menu {
+		float: left;
+		width: 70%;
+		padding-top: 13px;
+	}
+
+	.nav {
+		display: inline-block;
+		vertical-align: middle;
+
+		&__item {
+			display: inline-block;
+			margin-right: 15px;
+
+			&:last-child {
+				margin-right: 0;
+
+				&:after {
+					display: none;
+				}
+			}
+
+			&:after {
+				content: "";
+			    display: inline-block;
+			    vertical-align: middle;
+			    width: 4px;
+			    height: 4px;
+			    border-radius: 50%;
+			    background: #fff;
+			    margin-left: 15px;
+			}
+		}
+
+		&__link {
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 13px;
+			display: inline-block;
+		    vertical-align: middle;
+		    text-decoration: none;
+		    font-family: 'Ubuntu-Medium';
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.order__link {
+		width: 15%;
+	    display: inline-block;
+	    vertical-align: middle;
+	    padding: 9px 0;
+	    margin-left: 2%;
+	}
+}
+
+.down-arrow {
+	display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 60px;
+    height: 14px;
+    margin-left: -15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    height: 60px;
+
+    svg {
+    	position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    width: 30px;
+	    height: 30px;
+	    -webkit-transform: translate(-50%,-50%);
+	    transform: translate(-50%,-50%);
+	    -webkit-transition: .3s;
+	    transition: .3s;
+    }
+
+    &:hover {
+    	svg {
+			margin-top: -15px;
+		    width: 35px;
+		    height: 35px;
+    	}
+    }
+}

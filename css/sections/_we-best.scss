@@ -1,0 +1,39 @@
+.we-best {
+	background: url('../img/bg/we-best-bg.jpg') center center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		width: 33%;
+		vertical-align: top;
+	}
+
+	.section__title {
+		margin-bottom: 80px;
+	}
+
+	&__icon {
+		height: 100px;
+	    width: 100px;
+	    position: relative;
+	    display: inline-block;
+
+	}
+
+	&__title {
+		font-size: 24px;
+	    font-family: 'Lifehack-Medium';
+	    color: $black;
+	    margin-bottom: 20px;
+	    
+	}
+
+	&__textblock p {
+		font-size: 14px;
+    	line-height: 1.8;
+	}
+}
+
+

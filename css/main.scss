@@ -1,0 +1,31 @@
+// colors variable
+
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+// layout 
+
+@import "layout/_normalize.scss";
+@import "layout/_layout.scss";
+@import "layout/_fonts.scss";
+@import "layout/_mixin.scss";
+@import "layout/_adjustment.scss";
+@import "layout/_fixed-menu.scss";
+@import "layout/_popups.scss";
+
+// sections
+
+@import "sections/_we-do.scss";
+@import "sections/_we-best.scss";
+@import "sections/_burger.scss";
+@import "sections/_team.scss";
+@import "sections/_menu.scss";
+@import "sections/_reviews.scss";
+@import "sections/_order.scss";
+@import "sections/_map.scss";
+
+// widgets 
+
+@import "widgets/_fancybox.scss";

@@ -1,0 +1,107 @@
+.team {
+	background: url('../img/bg/team.jpg') center center;
+	background-size: cover;
+	position: relative;
+}
+
+.team_section {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0px;
+	width: 50%;
+	background: rgba(#2f3234, .93);
+	padding: 50px 20px 0 75px;
+
+	.section__title {
+		margin-bottom: 45px;
+	}
+}
+
+
+.team-accordion {
+
+	&__item {
+		margin-bottom: 40px;
+	}
+
+	&__content {
+		@include clearfix;
+		display: none;
+		padding-top: 15px;
+	}
+
+	&__pic {
+		float: left;
+	    text-align: center;
+	    width: 30%;
+	}
+
+	&__img {
+		display: inline-block;
+	    vertical-align: top;
+	    width: 100px;
+	    height: 100px;
+	    background-size: cover;
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    border-radius: 50%;
+	}
+
+	&__text {
+		float: left;
+    	width: 70%;
+    	color: #fff;
+    	font-size: 14px;
+
+    	&-content {
+    		font-family: 'Ubuntu-Light';
+    	}
+	}
+
+	&__title {
+		font-family: 'Ubuntu';
+	    margin-bottom: 14px;
+	    font-weight: 600;
+	}
+
+}
+
+.team-accordion__triger {
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+    font-family: 'Gagalin-Regular';
+	
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		left: -20px;
+		top: 8px;
+		width: 0;
+		height: 0;
+		border-top: 7px solid $yellow;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 0px solid transparent;
+		transform: rotate(0deg);
+		transition: .3s
+	}
+}
+
+.team-accordion__item-active {
+	.team-accordion__content {
+		display: block;
+	}
+
+	.team-accordion__triger {
+		color: $yellow;
+
+		&:before {
+			transform: rotate(-180deg);
+		}
+	}
+}

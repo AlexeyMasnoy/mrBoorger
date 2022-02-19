@@ -1,0 +1,59 @@
+.full-review {
+	position: relative;
+	padding: 25px 20px;
+}
+
+.full-review__title {
+	font-family: 'Gagalin-Regular';
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.full-review__content {
+	font-size: 14px;
+    font-family: 'Ubuntu-Light';
+}
+
+.full-review__close {
+	position: absolute;
+	right: 20px;
+}
+
+.popup__success {
+	width: 240px;
+	display: none;
+
+	&-wrapper {
+		padding: 20px;
+    	text-align: center;
+	}
+
+	&-text {
+		margin-bottom: 20px;
+    	font-size: 14px;
+	}
+
+	&-close {
+
+	}
+}
+
+.popup__error {
+	width: 240px;
+	display: none;
+
+	&-wrapper {
+		padding: 20px;
+    	text-align: center;
+	}
+
+	&-text {
+		margin-bottom: 20px;
+    	font-size: 14px;
+	}
+
+	&-close {
+		
+	}
+}
